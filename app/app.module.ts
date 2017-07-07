@@ -5,16 +5,14 @@ import { FormsModule }  from '@angular/forms';
 import { ZooListComponent }  from './zoo-list.component';
 import { EditZooComponent } from './edit-zoo.component';
 import { NewZooComponent} from './new-zoo.component';
-//import { CompletenessPipe } from './completeness.pipe';
+import { ViewAgePipe } from './viewAge.pipe';
 
 
 @NgModule({
   imports: [ BrowserModule,
             FormsModule ],
-  declarations: [ AppComponent, ZooListComponent, EditZooComponent, NewZooComponent],
+  declarations: [ AppComponent, ZooListComponent, EditZooComponent, NewZooComponent, ViewAgePipe],
   bootstrap:    [ AppComponent ]
 })
-
-//CompletenessPipe
 
 export class AppModule { }
