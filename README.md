@@ -4,10 +4,11 @@
 #### By _**David Rolfs**_
 
 ## Description
-This Web application tracks the animals in the zoo. It allows the user to input the animals species, name, age, location, diet, caretakers needed, likes, and dislikes. The user can sort the animals by age.
+This Web application tracks the animals in the zoo. The user can view and update the current animals entered. The user can add animals using the input form to enter the animals species, name, age, location, diet, caretakers needed, likes, and dislikes. The user can filter the animals displayed by age.
 
 ## Repository
 https://github.com/DavidRolfs/ZOO
+
 ## Specs
 | Description | input | output |
 | ------------- |:-------------:| -----:|
