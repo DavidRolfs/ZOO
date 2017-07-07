@@ -8,14 +8,14 @@ import { Zoo } from './zoo.model';
       <h1>Zoo Tracker</h1>
       <zoo-list [childZooList]="masterZooList" (clickSender)="editZoo($event)"></zoo-list>
       <hr>
-      <edit-zoo [childSelectedZoo]="selectedZoo" (doneButtonClickedSender)="finishedEditing()"></edit-zoo>
+      <edit-zoo [childSelectedZoo]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-zoo>
       <new-zoo (newZooSender)="addZoo($event)"></new-zoo>
     </div>
   `
 })
 
 export class AppComponent {
-  selectedZoo = null;
+  selectedAnimal = null;
 
   masterZooList: Zoo[] = [
     new Zoo('Arctic Fox', 'Moon', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool shade', 'Loud noises'),
@@ -26,11 +26,11 @@ export class AppComponent {
   ];
 
   editZoo(clickedZoo) {
-    this.selectedZoo = clickedZoo;
+    this.selectedAnimal = clickedZoo;
   }
 
   finishedEditing() {
-    this.selectedZoo = null;
+    this.selectedAnimal = null;
   }
 
   addZoo(newZooFromChild: Zoo) {
