@@ -12,24 +12,24 @@ import { Zoo } from './zoo.model';
     <h3> Click an Animal to edit its information" </h3>
     <ul>
       <li (click)="editButtonHasBeenClicked(currentZoo)" *ngFor="let currentZoo of childZooList | viewAge:filterByAge">
-      <span class="title">Species:</span> {{currentZoo.species}}
+      Species: <span class="title">{{currentZoo.species}}</span>
       <br>
-      Name: {{currentZoo.name}}
+      Name:<span class="title">{{currentZoo.name}}</span>
       <br>
-      Age: {{currentZoo.age}}
+      Age: <span class="title">{{currentZoo.age}}</span>
       <br>
-      Diet: {{currentZoo.diet}},
+      Diet: <span class="title">{{currentZoo.diet}}</span>
       <br>
-      Location: {{currentZoo.location}},
+      Location: <span class="title">{{currentZoo.location}}</span>
       <br>
-      Caretakers: {{currentZoo.caretakers}},
+      Caretakers: <span class="title">{{currentZoo.caretakers}}</span>
       <br>
-      Sex: {{currentZoo.sex}},
+      Sex: <span class="title">{{currentZoo.sex}}</span>
       <br>
-      Likes: {{currentZoo.likes}},
+      Likes: <span class="title">{{currentZoo.likes}}</span>
       <br>
-      Dislikes: {{currentZoo.dislikes}}
-      <br>
+      Dislikes: <span class="title">{{currentZoo.dislikes}}</span>
+      <br/><br/>
       </li>
     </ul>
   `
